@@ -36,7 +36,7 @@ def run(path_params: str):
                     dropout=dropout,
                     vocab_size=params_ml['vocab_size'],
                     min_frequency=params_ml['tokens_min_frequency'],
-                    serialize=True,
+                    serialize=False,
                     save_path=model_dir)
     print("Training tokenizer completed!")
 
