@@ -47,7 +47,7 @@ def run(path_params: str):
 
     gpt_neo_config = GPTNeoConfig(  vocab_size=params_ml['vocab_size'],
                                     max_position_embeddings=params_ml['model_max_length'],
-                                    attention_types=[[["global", "local"], 3]],
+                                    attention_types=[[["global", "local"], 2]],
                                     num_layers=params_ml['model_n_layer'],
                                     num_heads=params_ml['model_n_head'])
     print(f'GptNeo configuration:{gpt_neo_config}')
