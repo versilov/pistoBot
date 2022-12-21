@@ -1,0 +1,3 @@
+# https://github.com/minimaxir/aitextgen/issues/33
+pytorch-lightning~=1.5.0
+aitextgen

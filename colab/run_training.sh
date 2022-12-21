@@ -4,7 +4,7 @@ set -e
 cd ..
 
 echo "Installing common requirements..."
-pip install -q -r requirements.txt
+pip3 install -q -r requirements.txt
 
 if [[ $1 == "vanilla" ]]; then
     echo "[Vanilla model choose]"
@@ -32,6 +32,14 @@ elif [[ $1 == "gpt2-scratch" ]]; then
 
     echo "Training model..."
     python ./pistoBot/03_gpt2_scratch/gpt2_scratch.py -v
+elif [[ $1 == "gpt_neo_scratch" ]]; then
+    echo "[gpt_neo-scratch model chosen]"
+
+    echo "Installing requirements..."
+    pip3 install -q -r ./pistoBot/04_gpt_neo_scratch/requirements.txt
+
+    echo "Training model..."
+    python3 ./pistoBot/04_gpt_neo_scratch/gpt_neo_scratch.py -v
 else
     echo "$1 model not recognized"
 fi
