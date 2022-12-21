@@ -14,8 +14,8 @@ ml:
   model_n_head: 8 # Number of attention heads for each attention layer in the Transformer encoder.
   # See class `GPT2Config(PretrainedConfig)` for more info and parameters
 
-  train_steps: 3000 # 30000
-  train_generate_every: 5000
+  train_steps: 18000 # 30000
+  train_generate_every: 1000
   train_save_every: 1000
   train_learning_rate: 0.0001
   train_batch_size: 256
