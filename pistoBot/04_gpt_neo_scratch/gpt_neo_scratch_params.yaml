@@ -10,7 +10,7 @@ ml:
   model_max_length: 32 # Same value for n_positions, n_ctx
   model_dropout: 0.0 # Same value for resid_pdrop, embd_pdrop, attn_pdrop, summary_first_dropout
   model_n_embd: 256 # Dimensionality of the embeddings and hidden states.
-  model_n_layer: 8 # Number of hidden layers in the Transformer encoder.
+  model_n_layer: 6 # Number of hidden layers in the Transformer encoder.
   model_n_head: 8 # Number of attention heads for each attention layer in the Transformer encoder.
   # See class `GPT2Config(PretrainedConfig)` for more info and parameters
 
